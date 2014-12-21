@@ -1,0 +1,10 @@
+---
+# tasks file for ajsalminen.mysql_client
+
+- name: Configure mysql client credentials.
+  template:
+    src: dot_my.cnf.j2
+    dest: "{{ mysql_client_conf_path }}/.my.cnf"
+    owner: "{{ mysql_client_user }}"
+    group: "{{ mysql_client_user }}"
+    mode: 0600

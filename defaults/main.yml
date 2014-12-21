@@ -1,0 +1,4 @@
+---
+# defaults file for ajsalminen.mysql_client
+mysql_client_conf_path: "~{{ ansible_ssh_user }}"
+mysql_client_user: "{{ ansible_ssh_user }}"
